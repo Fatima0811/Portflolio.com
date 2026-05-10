@@ -147,12 +147,22 @@ section {
 }
 
 .main-container .image {
-    z-index: -1;
-    width: 50%;
+    z-index: 0;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-container .image img {
-    width: 100%;
+    width: 78%;
+    max-width: 360px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    aspect-ratio: 1 / 1;
+    mix-blend-mode: multiply;
+    filter: contrast(1.05);
 }
 
 .main-container .content {
